@@ -2,8 +2,8 @@ export default function About() {
   return (
     <div className="flex flex-col gap-4">
       <p className="bg-orange-200 p-2 border border-black">
-        I'm all about self-improvement, and I've always wanted to incorporate
-        daily, random challenges into my routine easily.
+        I&apos;m all about self-improvement, and I&apos;ve always wanted to
+        incorporate daily, random challenges into my routine easily.
       </p>
       <p className="bg-orange-200 p-2 border border-black">
         By making these challenges random, I keep my body and brain on their
