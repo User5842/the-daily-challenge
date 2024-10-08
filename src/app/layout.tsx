@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased ${roboto.className}`}>
         <main>
-          <div className="h-dvh max-w-lg m-auto flex">
+          <div className="h-dvh max-w-lg m-auto flex p-2">
             <div className="m-auto flex flex-col gap-2">
               <header className="bg-black text-white p-2">
                 <h1 className="text-3xl">The Daily Challenge</h1>
