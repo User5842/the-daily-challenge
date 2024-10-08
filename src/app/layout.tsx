@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Roboto } from "next/font/google";
+import Link from "next/link";
 
 const roboto = Roboto({
   weight: ["300", "400", "900"],
@@ -19,7 +20,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased ${roboto.className}`}>{children}</body>
+      <body className={`antialiased ${roboto.className}`}>
+        <main>
+          <div className="h-dvh max-w-lg m-auto flex">
+            <div className="m-auto flex flex-col gap-2">
+              <header className="bg-black text-white p-2">
+                <h1 className="text-3xl">The Daily Challenge</h1>
+                <p>Unique, daily challenges for self-improvement.</p>
+              </header>
+              <div>
+                <ul className="flex gap-2 justify-end">
+                  <li className="text-black underline">
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li className="text-black underline">
+                    <Link href="/account">Account</Link>
+                  </li>
+                  <li className="text-black underline">
+                    <Link href="/about">About</Link>
+                  </li>
+                </ul>
+              </div>
+              {children}
+              <footer className="bg-slate-700 text-white p-2 text-center">
+                <p>Made with ❤️ by Rafael Negron</p>
+              </footer>
+            </div>
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
