@@ -1,13 +1,25 @@
+import Link from "next/link";
+
 export default function Main() {
   return (
     <main>
-      <div className="h-dvh max-w-lg m-auto flex flex-col">
-        <div className="m-auto">
+      <div className="h-dvh max-w-lg m-auto flex">
+        <div className="m-auto flex flex-col gap-2">
           <header className="bg-black text-white p-2">
             <h1 className="text-3xl">The Daily Challenge</h1>
             <p>Unique, daily challenges for self-improvement.</p>
           </header>
-          <div className="flex p-2">
+          <div>
+            <ul className="flex gap-2 justify-end">
+              <li className="bg-black p-2 text-white">
+                <Link href="#">Account</Link>
+              </li>
+              <li className="bg-black p-2 text-white">
+                <Link href="#">About</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="flex">
             <div className="m-auto flex flex-col gap-2">
               <div className="border border-black">
                 <h2 className="bg-orange-200 p-2 font-bold text-xl">
