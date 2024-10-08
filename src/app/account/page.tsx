@@ -8,6 +8,31 @@ export default function Account() {
       <p className="bg-orange-200 p-2 border border-black">
         Keep it up, and go on a streak! How long can you maintain it? 🔥
       </p>
+      <form action="" method="post" className="flex flex-col gap-2">
+        <div>
+          <label htmlFor="email">Enter your email: </label>
+          <input
+            className="border border-black p-1"
+            id="email"
+            name="email"
+            type="email"
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Enter your password: </label>
+          <input
+            className="border border-black p-1"
+            id="password"
+            name="password"
+            type="password"
+            required
+          />
+        </div>
+        <div className="bg-black text-white p-2 w-fit">
+          <button type="submit">Create account</button>
+        </div>
+      </form>
     </div>
   );
 }
