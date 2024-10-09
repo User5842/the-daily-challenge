@@ -2,8 +2,8 @@ export default function Main() {
   return (
     <div className="flex">
       <div className="m-auto flex flex-col gap-2">
-        <div className="border border-black">
-          <h2 className="bg-orange-200 p-2 font-bold text-xl">
+        <div className="border border-black dark:border-white">
+          <h2 className="bg-orange-200 p-2 font-bold text-xl dark:text-black">
             Fitness & Health
           </h2>
           <div className="p-2">
@@ -19,11 +19,11 @@ export default function Main() {
           </div>
         </div>
         <div className="flex gap-4 justify-end">
-          <div className="flex gap-2 border border-black p-2">
+          <div className="flex gap-2 border border-black p-2 dark:border-white">
             <div className="cursor-pointer">👍</div>
             <div>0</div>
           </div>
-          <div className="flex gap-2 border border-black p-2">
+          <div className="flex gap-2 border border-black p-2 dark:border-white">
             <div className="cursor-pointer">👎</div>
             <div>0</div>
           </div>
