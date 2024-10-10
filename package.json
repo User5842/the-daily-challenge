@@ -13,6 +13,8 @@
     "dev": "next dev",
     "format": "prettier . --write",
     "lint": "next lint",
+    "prebuild": "npm run prisma:generate && npm run format",
+    "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "start": "next start"
   },
