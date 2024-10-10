@@ -24,10 +24,12 @@ export default function RootLayout({
         <main>
           <div className="h-dvh max-w-lg m-auto flex p-2">
             <div className="m-auto flex flex-col gap-2">
-              <header className="bg-black text-white p-2 dark:bg-white dark:text-black">
-                <h1 className="text-3xl">The Daily Challenge</h1>
-                <p>Unique, daily challenges for self-improvement.</p>
-              </header>
+              <Link href="/">
+                <header className="bg-black text-white p-2 dark:bg-white dark:text-black">
+                  <h1 className="text-3xl">The Daily Challenge</h1>
+                  <p>Unique, daily challenges for self-improvement.</p>
+                </header>
+              </Link>
               <div>
                 <ul className="flex gap-2 justify-end">
                   <li className="text-black underline dark:text-white">

@@ -33,9 +33,9 @@ export default async function Account() {
         Keep it up, and go on a streak! How long can you maintain it? 🔥
       </p>
       <p className="bg-blue-200 p-2 border border-black dark:text-black dark:border-white">
-        🛈 The following sign in method relies on an email magic link. You'll
-        have 24 hours to click on the link to the provided email to sign
-        in/create an account.
+        🛈 The following sign in method relies on an email magic link.
+        You&apos;ll have 24 hours to click on the link to the provided email to
+        sign in/create an account.
       </p>
       <form
         action={async () => {

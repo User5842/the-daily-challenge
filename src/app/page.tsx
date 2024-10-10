@@ -3,7 +3,7 @@ export default function Main() {
     <div className="flex">
       <div className="m-auto flex flex-col gap-2">
         <div className="border border-black dark:border-white">
-          <h2 className="bg-orange-200 p-2 font-bold text-xl border-b border-black dark:text-black">
+          <h2 className="bg-orange-200 p-2 font-bold text-xl dark:text-black">
             Fitness & Health
           </h2>
           <div className="p-2">
